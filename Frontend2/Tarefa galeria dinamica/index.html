@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens Persistente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📷 Galeria de Imagens Persistente</h1>
+            <p class="subtitle">Adicione e remova imagens que persistem mesmo após recarregar a página</p>
+        </header>
+        
+        <section class="upload-section">
+            <h2>Adicionar Nova Imagem</h2>
+            <div class="upload-container">
+                <div class="input-group">
+                    <label for="imageTitle">Título da Imagem</label>
+                    <input type="text" id="imageTitle" placeholder="Digite um título para sua imagem">
+                </div>
+                
+                <div class="input-group">
+                    <label for="imageFile">Selecione uma Imagem</label>
+                    <input type="file" id="imageFile" accept="image/*">
+                </div>
+                
+                <div class="input-group">
+                    <label>&nbsp;</label>
+                    <button id="addButton">Adicionar Imagem</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery-section">
+            <h2>Galeria de Imagens</h2>
+            <div class="gallery-container" id="galleryContainer">
+                <!-- Imagens serão adicionadas aqui dinamicamente -->
+            </div>
+        </section>
+        
+        <div class="info-panel">
+            <div>Total de Imagens: <span id="imageCount">0</span></div>
+            <div>Armazenamento usado: <span id="storageUsage">0 KB</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

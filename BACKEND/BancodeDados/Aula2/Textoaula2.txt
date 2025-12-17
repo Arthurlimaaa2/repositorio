@@ -1,0 +1,13 @@
+o que é CRUD 
+ 
+C - Create - criar objetos
+R - Read - ler objetos
+U - Update - atualizar objetos
+D - Delete - deletar objetos
+
+SQL:
+
+CREATE - INSERT
+READ - SELECT
+UPDATE - UPDATE
+DELETE - DELETE
