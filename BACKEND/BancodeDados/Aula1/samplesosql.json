@@ -1,0 +1,22 @@
+{
+    "authors": [{
+        "name": "Gabriel Mello",
+        "uuid": "1234567-e89b-123-456-426655440000",
+        "type": "Person",
+        "books": [{
+            "name": "Databaes simplified",
+            "genres": ["technology", "software development"]
+        }]
+    },
+    {
+        "name": "StackX",
+        "uuid": "123e4567-e89b-12d3-8456-426655440202",
+        "type": "company",
+        "books": [{ 
+            "name": "How to rock as a software developer",
+            "genres": [ "technology", "software development", "academics"]
+    }]
+    }
+]
+
+}

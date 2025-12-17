@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Conhecimentos Gerais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz de Conhecimentos Gerais</h1>
+            <p class="subtitle">Teste seus conhecimentos em diversas áreas com este quiz interativo!</p>
+        </header>
+        
+        <div class="quiz-container" id="quiz-container">
+            <div class="progress-container">
+                <div>Progresso: <span id="current-question">1</span> de <span id="total-questions">5</span></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-number">Pergunta <span id="q-number">1</span>:</div>
+                <div class="question-text" id="question-text"></div>
+                
+                <div class="options-container" id="options-container">
+                    <!-- Opções serão inseridas aqui pelo JavaScript -->
+                </div>
+                
+                <div id="text-answer-container" style="display: none;">
+                    <input type="text" class="text-answer" id="text-answer" placeholder="Digite sua resposta aqui...">
+                </div>
+                
+                <div class="feedback" id="feedback"></div>
+                
+                <div class="buttons-container">
+                    <button id="prev-btn">Anterior</button>
+                    <button id="next-btn">Próxima</button>
+                    <button id="submit-btn">Enviar Respostas</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="result-container" id="result-container">
+            <h2 class="result-title">Resultado do Quiz</h2>
+            <div class="score" id="score">0/5</div>
+            <div class="result-message" id="result-message"></div>
+            <button class="restart-btn" id="restart-btn">Fazer Quiz Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
